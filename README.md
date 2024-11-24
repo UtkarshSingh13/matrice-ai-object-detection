@@ -3,6 +3,10 @@
 ### Data:
 For our experiments, we utilized the VinBigData Chest X-ray Abnormalities Detection dataset, which comprises 18,000 high-quality chest radiographs collected from two Vietnamese hospitals: Hospital 108 and Hanoi Medical University Hospital. While the original dataset annotates 14 thoracic abnormalities, we focused on the five most frequent classes: Aortic enlargement, Cardiomegaly, Nodule/Mass, Pleural thickening, and Pulmonary fibrosis. This selection was done as mentioned in the assigment. The dataset was annotated by experienced radiologists through VinBigData's VinLab platform, and model evaluation followed the PASCAL VOC 2010 protocol using mean Average Precision (mAP) at IoU > 0.4
 
+## Model:
+- According to the step of finding the model, as per the below hash function:
+`x = int(hashlib.sha256(s.encode('utf-8')).hexdigest(), 16) % 50`, the value leads me to use th Yolov9-c model for object detection.
+
 ## Repo Structure
 
 - `augmentation-config`: This folder contains the augmentation configuration we defined while training the model.The augmentation techniques have been taken from [here](https://github.com/WongKinYiu/PyTorch_YOLOv4/tree/master)
