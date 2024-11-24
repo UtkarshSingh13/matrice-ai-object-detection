@@ -5,7 +5,7 @@ For our experiments, we utilized the VinBigData Chest X-ray Abnormalities Detect
 
 ## Model:
 - According to the step of finding the model, as per the below hash function:
-`x = int(hashlib.sha256(s.encode('utf-8')).hexdigest(), 16) % 50`, the value leads me to use th Yolov9-c model for object detection.
+`x = int(hashlib.sha256(s.encode('utf-8')).hexdigest(), 16) % 50`, the value leads me to use the Yolov9-c model for object detection.
 
 ## Repo Structure
 
